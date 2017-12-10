@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Demo | Responsive Web</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]
+		<script type='text/javascript' src='scripts/respond.min.js'></script>-->
+	</head>
+	<body>
+		
+		<div id="wrapper">
+		
+			<header>
+				
+				<nav id="skipTo">
+					<ul>
+						<li>
+							<a href="#main" title="Skip to Main Content">Skip to Main Content</a>
+						</li>
+					</ul>
+				</nav>
+				
+				
+				
+				<nav>
+					<ul>
+						<li><a href="index.html" title="Inicio">Inicio</a></li>
+						<li><a href="galeria.html" title="Galeria">Galeria</a></li>
+						<li><a href="#" title="Contactenos">Cont&Aacute;ctenos</a></li>
+					</ul>
+				</nav>
+				
+				<div id="banner">
+				<img src="images/286chico.png" alt="banner" />
+				</div>
+			</header>	
+		<div id="content">
+
+<h1>Paso a Paso Makeup diario</h1>
+
+ 
+<p><strong>Maquillaje para el día:</strong> </p>
+<p><strong>CARA</strong> Colocamos sombra color salmon platinado en la cuenca del ojo con una brochita, difuminamos y arriba de la cuenca del ojo colocamos sombra color rosa. Y Pintamos las pestañas con rímel. </p>
+<p><strong> OJOS </strong> Colocamos con una brochita sombra color negro en la cuenca del ojo,después colocas sombra marrón platinado arriba de la cuenca del ojo, difuminamos esa zona, luego delineamos el ojo con un delineador negro y colocamos rímel en las pestañas.</p>
+<p><strong>LABIOS</strong> Delineamos el labio con un lapiz color rosa y pintamos el labio con un labial rosa matte.</p>
+<hr/>
+
+<div class="gallery">
+  
+    <img src="images/inicial1.jpg" alt="Foto inicial" onclick="myFunction(this);" >
+
+  <div class="desc">Foto Inicial</div>
+</div>
+
+<div class="gallery">
+  
+    <img  src="images/inicial2.jpg" alt="Foto Inicial" onclick="myFunction(this);" >
+ 
+  <div class="desc">Foto Inicial</div>
+</div>
+
+<div class="gallery">
+  
+    <img src="images/diario.jpg" alt="Resultado del maquillaje final" onclick="myFunction(this);" >
+
+  <div class="desc">Resultado del maquillaje final</div>
+</div>
+
+<div class="gallery">
+  
+    <img  src="images/diario2.jpg" alt="Resultado del maquillaje final" onclick="myFunction(this);" >
+ 
+  <div class="desc">Resultado del maquillaje final</div>
+</div>
+
+        </div>
+        
+   <div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img class="modal-content" id="expandedImg" >
+  <div id="imgtext"></div>
+</div>     
+        
+
+       <div id="footer">
+         <div class="footer_links"> 
+           
+         </div>  
+    
+    </div>
+		</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+    
+	</body>
+</html>
