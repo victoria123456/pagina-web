@@ -211,6 +211,15 @@ div.desc {
     max-width: 700px;
 }
 
+.fotosgaleria{
+margin-left: 10%;
+width: 100%;
+height: auto;
+}
+
+
+
+
 
 .gallery img {
     opacity: 0.8; 
