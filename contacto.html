@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Demo | Responsive Web</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]
+		<script type='text/javascript' src='scripts/respond.min.js'></script>-->
+	</head>
+	<body>
+		
+		<div id="wrapper">
+		
+			<header>
+				
+				
+				
+				
+				
+				<nav>
+					<ul>
+						<li><a href="index.html" title="Inicio">Inicio</a></li>
+						<li><a href="galeria.html" title="Galeria">Galeria</a></li>
+						<li><a href="contacto.html" title="Contactenos">Cont&Aacute;ctenos</a></li>
+					</ul>
+				</nav>
+				
+				<div id="banner">
+				<img src="images/286chico.png" alt="banner" />
+				</div>
+			</header>	
+			<div id="content">
+
+			<div class="contact_right">
+            		<h3>Formulario de contacto</h3>
+            		<div class="contact-form">
+							<form method="post" action="contact-post.html">
+								<input type="text" class="textbox" value="Nombre y Apellido" >
+								<input type="text" class="textbox" value="Email">
+								<textarea value="Mensaje" >Mensaje</textarea>
+								<input type="submit" value="Enviar">
+						
+							</form>
+					</div>
+            </div>
+
+
+</div>
+
+  
+
+       
+       <div id="footer">
+         <div class="footer_links"> 
+           
+         </div>  
+    
+    </div>
+		</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+    
+	</body>
+</html>
